@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="app.css">
+    <title>To DO</title>
+</head>
+
+<body>
+    <div class="container is-fluid">
+        <div class="section is-fluid is-large">
+            <div class="card">
+                <header class="card-header heading">
+                    <p class="card-header-title is-centered heading">
+                        Todos
+                    </p>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <form id="form">
+                            <div class="control">
+                                <input class="input is-info" type="text" id="input" placeholder="New Todo"
+                                    autocomplete="off">
+                            </div>
+                        </form>
+                        <div class="is-size-4" id="list">
+                            <ul id="todos">
+
+                            </ul>
+                        </div>
+                        <p class="is-size-6 has-text-centered has-text-grey">Right click to mark as complete <br> Double
+                            click to remove
+                            it.</p>
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <button class="button is-large is-fullwidth is-link" id="finishAll">All Finished</button>
+                    <button class="button is-large is-fullwidth is-danger" id="reset">Reset</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
